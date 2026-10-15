@@ -2,11 +2,17 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>/* 예전 주소로 들어오면 교회 주소로 옮긴다 (주소 뒤 ?c=·#j= 그대로) */
+if (location.hostname === 'soonryu74.github.io') location.replace('https://bangjoo-church.github.io/' + location.pathname.replace(/^\/gajeong\//, '') + location.search + location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>멜번방주교회 목장 나눔터 — 목자 화면</title>
+<title>목장 나눔터 — 목자 화면</title>
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#0B57A4">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="목장나눔터">
 <link rel="stylesheet" href="style.css">
 <style>
   .tabs{display:flex; gap:6px; margin:16px 0 4px; overflow-x:auto; padding-bottom:4px; -webkit-overflow-scrolling:touch}
@@ -148,5 +154,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="common.js"></script>
 <script src="mokjang.js"></script>
+<script src="/assets/credit.js" defer></script>
 </body>
 </html>
